@@ -1,0 +1,16 @@
+//6/30: sum of array elements
+#include<stdio.h>
+void main()
+{
+    int n,i,a[10],sum=0;
+    printf("Enter size: ");
+    scanf("%d",&n);
+    printf("Enter elements: ");
+    for(i=0;i<n;i++)
+      scanf("%d",&a[i]);
+    for(i=0;i<n;i++)
+    {
+        sum+=a[i];
+    }
+    printf("The sum is %d",sum);
+}
