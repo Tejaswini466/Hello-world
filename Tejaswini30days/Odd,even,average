@@ -1,0 +1,30 @@
+// /30
+#include<stdio.h>
+ int main()
+{
+ int n, i, a[10],esum = 0, osum = 0;
+float avg;
+ printf("\n Enter the Size : ");
+ scanf("%d", &n);
+  printf("\n Enter the Array Elements\n");
+ for(i = 0; i < n; i++)
+ {
+      scanf("%d", &a[i]);
+ }
+  for(i = 0; i < n; i ++)
+ {
+   if(a[i] % 2 == 0)
+   {
+ 	esum = esum + a[i];
+   }
+   else
+   {
+ 	osum = osum + a[i];
+   }
+ }
+  avg=(float) (esum+osum)/n;
+  printf("\n The Sum of Even Numbers in this Array = %d ", esum);
+ printf("\n The Sum of Odd Numbers in this Array = %d ", osum);
+printf("\n The average of the numbers in this Array = %f ", avg);
+return 0;
+}
